@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Rsvp extends Model
 {
     use HasFactory;
+    
+    protected $fillable = [
+        'user_id', 'event_id', 'status',
+    ];
 
     public function user()
     {
